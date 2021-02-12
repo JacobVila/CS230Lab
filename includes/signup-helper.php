@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST[['signup-submit']])){
+if(isset($_POST['signup-submit'])){
 
     require 'dbhandler.php';
 
@@ -15,7 +15,6 @@ if(isset($_POST[['signup-submit']])){
         header("Location: ../signup.php?error=diffPasswords");
         exit();
     }
-    
     else{
         $sql = "SELECT uname FROM users WHERE uname=?";
         $stmt = mysqli_stmt_init($conn);
