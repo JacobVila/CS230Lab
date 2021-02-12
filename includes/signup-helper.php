@@ -11,14 +11,14 @@ if(isset($_POST['signup-submit'])){
     $fname = $_POST['fname'];
     $lmane = $_POST['lname'];
 
-    if($passw !== $pass_rep){
+    if($passw !== $passw_rep){
         header("Location: ../signup.php?error=diffPasswords");
         exit();
     }
     else{
         $sql = "SELECT uname FROM users WHERE uname=?";
         $stmt = mysqli_stmt_init($conn);
-        if(!mysqli_stmt_prepare($sstmt, $sql)){
+        if(!mysqli_stmt_prepare($stmt, $sql)){
             header("Location: ../signup.php?error=SQLInjection");
             exit();
         }
@@ -35,7 +35,7 @@ if(isset($_POST['signup-submit'])){
             else{
                 $sql = "INSERT INTO users (lname, fname, email, uname, password) VALUES (?, ?, ?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
-                if(!mysqli_stmt_prepare($sstmt, $sql)){
+                if(!mysqli_stmt_prepare($stmt, $sql)){
                     header("Location: ../signup.php?error=SQLInjection");
                     exit();
                 }
