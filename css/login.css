@@ -1,0 +1,36 @@
+.bg-cover {
+    background-image: url("../images/main-bg-2.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat; 
+}
+
+.center-me {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-signin{
+
+    background-color: #2c78c0;
+
+    padding: 20px;
+    border-radius: 50px;
+
+    text-align: center;
+
+}
+
+input{
+
+    margin-bottom: 10px;
+}
+
+img{
+    width: 1100px;
+    height: 700px;
+    margin: auto;
+}

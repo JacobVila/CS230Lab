@@ -4,7 +4,7 @@ if(isset($_POST['signup-submit'])){
 
     require 'dbhandler.php';
 
-    $usermane = $_POST['uname'];
+    $username = $_POST['uname'];
     $email = $_POST['email'];
     $passw = $_POST['pwd'];
     $passw_rep = $_POST['con-pwd'];
