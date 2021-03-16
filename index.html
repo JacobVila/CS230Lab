@@ -1,57 +1,24 @@
-<body>
-    <link rel="stylesheet" href="css/about.css">
+<h5 style="text-align: center;">No reviews yet.</h5>
 
-    <div class="about">
-        <h1>About Us </h1>
-        <p>"Big Lakes is a quality fish dealer. We hope to meet all your fishy needs!"</p>
-    </div>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <img src="images/JohnPeterson.jpeg">
-                <div class="container">
-                    <h2>CEO</h2>
-                    <p>John Peterson</p>
-                    <p>JohnPeterson@Fmail.com</p>
-                    <s>John is a self-taught expert on bubblegum wrapper collecting, and has gratiously applied his expertese to our team.</p>
-                </div>
-            </div>
-        </div>
+<div class="card mx-auto" style="width: 30%; padding: 5px; margin-bottom: 10px;">
 
-        <div class="column">
-            <div class="card">
-                <img src="images/JoelTorrez.jpeg">
-                <div class="container">
-                    <h2>CFO</h2>
-                    <p>Joel Torrez</p>
-                    <p>JTorrez32@Fmail.com</p>
-                    <s>Joel got his MBA from Harvard, but feeling it was inadequate for his goals, also obtained a doctorate from PragerU as well.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <img src="images/SusanSorrensonn.jpeg">
-                <div class="container">
-                    <h2>CMO</h2>
-                    <p>Susan Sorrensonn</p>
-                    <p>SusanS@Fmail.com</p>
-                    <s>Its SUSAN. Nuf said.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <img src="images/PeteParker.jpeg">
-                <div class="container">
-                    <h2>Fish Specialist</h2>
-                    <p>Pete Parker</p>
-                    <p>PP76@Fmail.com</p>
-                    <s>Made his fortune short-selling Koi.</p>
-                </div>
-            </div>
+    <div class="media">
+        <img class="mr-3" src="'.$picpath.'" style="max-width: 75px; max-height: 75px; border-radius: 50%;">
+        <div class="media-body"> 
+            <h5 class="mt-0">$row['uname']</h5>
+            <p>'.$row['revdate'].'</p>
+            <p>'.$row['reviewtext'].'</p>
         </div>
     </div>
-</body>
+
+</div>
+
+
+
+
+<div class="container" style="text-align: center;">
+    <h1>'.$avg.'</h1>
+    <div class="container" style="margin-bottom: 10px;">'.stars($avg).'</div>
+    <p>Number of ratings: '.round($row2['Totla'], 1).'</p>
+
+</div>
