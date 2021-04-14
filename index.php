@@ -7,7 +7,7 @@ require 'includes/header.php';
 
     <div class="about">
         <h1>About Us </h1>
-        <p>"Big Lakes is a quality fish dealer. We hope to meet all your fishy needs!"</p>
+        <p>"Big Lakes is a quality fish reviewer. We hope to meet all your fishy needs!"</p>
     </div>
     <div class="row">
         <div class="column">
